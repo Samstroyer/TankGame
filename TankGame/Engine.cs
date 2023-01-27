@@ -52,6 +52,7 @@ public class Engine
         }
         else
         {
+            if (players[0].canon.Active) ;
             bool ended = players[1].Active();
             if (ended)
             {

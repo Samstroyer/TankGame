@@ -7,7 +7,7 @@ public class Player
     canonLeft = KeyboardKey.KEY_U,
     canonRight = KeyboardKey.KEY_P;
 
-    Canon canon;
+    public Canon canon;
 
     KeyboardKey leftControl, rightControl;
 

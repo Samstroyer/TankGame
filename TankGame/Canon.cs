@@ -7,6 +7,8 @@ public class Canon
     Vector2 pos, power = new(10, 40);
     int powerLoss = 4;
 
+    public bool Active { get; set; } = false;
+
     public Canon(Vector2 playerPos)
     {
         pos = playerPos + new Vector2(10, 10);
@@ -32,7 +34,7 @@ public class Canon
 
     public void Move(sbyte dist)
     {
-        power = Vector2.Transform(power, Matrix3x2.CreateRotation((float)(dist / 57.2957795)));
+        power = Vector2.Transform(power, Matrix3x2.CreateRotation((float)(dist / 80f)));
     }
 
     public void Update(Vector2 playerPos)
